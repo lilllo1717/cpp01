@@ -2,12 +2,12 @@
 CXX       = c++
 CXXFLAGS  = -Wall -Wextra -Werror -I . -g
 
-SRC       = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+SRC       = main.cpp 
 OBJ_DIR   = obj
 OBJ       = $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 DEPS      = $(OBJ:.o=.d)
 
-NAME      = ex00
+NAME      = ex02
 
 all: $(NAME)
 

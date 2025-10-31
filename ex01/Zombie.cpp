@@ -1,7 +1,12 @@
 #include "Zombie.hpp"
 
+Zombie::Zombie() {}
+
 Zombie::Zombie(std::string name)
-    : name(name) {}
+    : name(name)
+{
+    std::cout << "\033[32m" << name << " zombie created." << "\033[0m" << std::endl;
+}
 
 Zombie::~Zombie()
 {
